@@ -34,6 +34,8 @@ def naive_bayes_classifier(dataset_filepath, patient_measurements):
   healthy_hr_mean, healthy_hr_stddev = get_stats(healthy_heart_rate)
   diseased_temp_mean, diseased_temp_stddev = get_stats(diseased_temp)
   diseased_hr_mean, diseased_hr_stddev = get_stats(diseased_heart_rate)
+
+  #P(diseased| hr=)
   
   most_likely_class = "none"
   class_probabilities = [0,0]
